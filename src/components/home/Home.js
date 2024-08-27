@@ -42,7 +42,8 @@ function Home() {
                     </Link>
                 </Box>
                 <Box
-                    marginLeft='30px'
+                    marginLeft={['20px','30px','30px']}
+                    marginRight={['20px','30px','30px']}
                     >
                     <Text
                         fontSize='2.5rem'
