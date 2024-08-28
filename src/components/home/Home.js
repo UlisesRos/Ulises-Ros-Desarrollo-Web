@@ -80,9 +80,11 @@ function Home() {
                             >
                             <Image src={cadena} alt='maletin' w='18px' h='18px'/>
                             <Link
+                                href='https://github.com/UlisesRos'
                                 _hover={{
                                     color: '#CC0088'
                                 }}
+                                target='_blank'
                                 >
                                 <Text
                                     _hover={{

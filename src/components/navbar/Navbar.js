@@ -1,27 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import {  Link } from 'react-router-dom'
 import { Flex, Image, Box } from '@chakra-ui/react'
 import avatar from '../../img/avatar.svg'
 import '../../css/navbar/Boton-switch.css'
 
-function Navbar() {
-
-    const [theme, setTheme] = useState('light')
-
-    useEffect(() => {
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            setTheme(savedTheme);
-            document.documentElement.setAttribute('data-theme', savedTheme);
-        }
-    }, [])
-
-    const toggleTheme = () => {
-        const newTheme = theme === 'light' ? 'dark' : 'light';
-        setTheme(newTheme);
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-    };
+function Navbar({toggleTheme}) {
 
     return (
         <Flex
