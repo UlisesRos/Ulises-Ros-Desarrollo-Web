@@ -1,4 +1,5 @@
-import { Box, Flex, Image, Text, Button, Link } from '@chakra-ui/react'
+import { Box, Flex, Image, Text, Button } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 import React from 'react'
 import avatar from '../../img/avatar.svg'
 import paisaje from '../../img/paisaje.png'
@@ -96,7 +97,7 @@ function Contenido() {
                         Soy nuevo en el mundo del desarrollo web, pero he estado dedicando tiempo y esfuerzo para aprender y crecer en esta área. He completado con éxito tres cursos que me han proporcionado una sólida base en tecnologías y buenas prácticas. Estoy muy entusiasmado por aplicar todo lo que he aprendido y llevarlo a la práctica en proyectos reales. Mi objetivo es ganar experiencia trabajando y seguir desarrollando mis habilidades en el campo. Estoy comprometido y motivado para contribuir y aprender en un entorno profesional, y estoy listo para enfrentar nuevos desafíos en el desarrollo web.
                     </Text>
                     <Link
-                        
+                        to='/hablame'
                         >
                     <Button
                         margin='40px 0 0 54px'
