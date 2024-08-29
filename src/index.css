@@ -21,3 +21,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Personaliza la barra de scroll */
+body::-webkit-scrollbar {
+  width: 14px; /* Ancho de la barra de scroll */
+}
+
+/* Personaliza el "track" (fondo) de la barra de scroll */
+body::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+
+/* Personaliza el "thumb" (deslizador) de la barra de scroll */
+body::-webkit-scrollbar-thumb {
+  background-color: #888; /* Color del deslizador */
+  border-radius: 6px; /* Radio de borde para redondear el deslizador */
+  border: 3px solid #f1f1f1; /* Color y ancho del borde alrededor del deslizador */
+}
+
+/* Cambia el color del deslizador al pasar el mouse */
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #CC0088;
+}

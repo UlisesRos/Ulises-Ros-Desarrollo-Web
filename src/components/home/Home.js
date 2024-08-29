@@ -1,6 +1,6 @@
 import React from 'react'
 import { Box, Button, Flex, Image, Link, Text } from '@chakra-ui/react'
-import dev from '../../img/dev.png'
+import dev from '../../img/deve.png'
 import ulises from '../../img/ulises.png'
 import linkedin from '../../img/linkedin.png'
 import maleta from '../../img/maleta.png'
