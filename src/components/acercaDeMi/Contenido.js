@@ -5,6 +5,7 @@ import paisaje from '../../img/paisaje.png'
 import frontend from '../../img/fronend.png'
 import backend from '../../img/backend.png'
 import diseño from '../../img/diseño.png'
+import fijado from '../../img/fijado.png'
 
 function Contenido() {
     return (
@@ -23,12 +24,18 @@ function Contenido() {
                 overflow='hidden'
                 paddingBottom='15px'
                 >
-                    <Text
-                        color='grey'
-                        margin='10px 0 0 20px'
+                    <Flex
+                        align='center'
+                        margin='10px 0 3px 30px'
                         >
-                        🖈 tweet fijado
-                    </Text>
+                        <Image src={fijado} alt='fijado' w='20px' h='20px'/>
+                        <Text
+                            color='grey'
+                            marginLeft='9px'
+                            >
+                            tweet fijado
+                        </Text>
+                    </Flex>
                     <Box
                         marginLeft='5px'
                         display='flex'
@@ -53,7 +60,7 @@ function Contenido() {
                         Este es mi sitio donde intento publicar sobre lo que hago y cómo hacer cosas con código.
                         En lo personal, me encanta estar con la computadora, crear codigo y viajar.
                     </Text>
-                    <Image src={paisaje} alt='foto mia' borderRadius='5px' margin='10px 0 0 58px' w='80%' h='49vh'/>
+                    <Image src={paisaje} alt='foto mia' borderRadius='5px' margin='10px 0 0 58px' w='80%' h={['35vh','45vh','60vh']}/>
             </Box>
             <Box
                 w='100%'
@@ -95,7 +102,7 @@ function Contenido() {
                         margin='40px 0 0 54px'
                         backgroundColor='#CC0088'
                         color='black'
-                        w='85%'
+                        w={['75%','80%','85%']}
                         borderRadius='10px'
                         _hover={{
                             backgroundColor: 'white',
@@ -185,3 +192,5 @@ function Contenido() {
     }
 
 export default Contenido
+
+

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Button, Image, Link, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Image, Link, Text } from '@chakra-ui/react'
 import dev from '../../img/dev.png'
 import ulises from '../../img/ulises.png'
 import linkedin from '../../img/linkedin.png'
@@ -7,6 +7,7 @@ import maleta from '../../img/maleta.png'
 import torta from '../../img/torta.png'
 import cadena from '../../img/cadena.png'
 import evento from '../../img/evento.png'
+import autorizado from '../../img/autirzado.png'
 
 function Home() {
     return (
@@ -15,7 +16,7 @@ function Home() {
             >
             <Image src={dev} alt='developer' w='100%' h='15rem' />
             <Box>
-                <Image src={ulises} alt='ulises' w='10rem' h='10rem' borderRadius='100px' border='2px solid white' position='absolute' top='260px' marginLeft='30px'/>
+                <Image src={ulises} alt='ulises' w={['8.5rem','9.5rem','10rem']} h={['8.5rem','9.5rem','10rem']} borderRadius='100px' border='2px solid white' position='absolute' top={['275px','260px','260px']} marginLeft={['10px','30px','30px']}/>
                 <Box
                     w='100%'
                     display='flex'
@@ -45,12 +46,19 @@ function Home() {
                     marginLeft={['20px','30px','30px']}
                     marginRight={['20px','30px','30px']}
                     >
-                    <Text
-                        fontSize='2.5rem'
-                        fontWeight='semi-bold'
+                    <Flex
+                        alignItems='center'
                         >
-                        Hola Ulises! 🤘🏻
-                    </Text>
+                        <Text
+                            fontSize='2.5rem'
+                            fontWeight='semi-bold'
+                            marginBottom='-10px'
+                            >
+                            Ulises Ros
+                        </Text>
+                        <Image src={autorizado} alt='logo de autorizado' h='32px' w='32px' margin='12px 0 0 6px'/>
+                    </Flex>
+                    <Text color='grey'>@ulisesros</Text>
                     <Text>
                         ¡Da vida a tus ideas con código! ✨
                     </Text>

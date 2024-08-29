@@ -4,7 +4,7 @@ import { Box } from '@chakra-ui/react'
 function Cursos() {
     return (
         <Box>
-            Cursos
+            Vamos con esdto
         </Box>
     )
 }
