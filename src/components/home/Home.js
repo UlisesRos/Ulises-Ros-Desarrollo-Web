@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Button, Flex, Image, Link, Text } from '@chakra-ui/react'
 import dev from '../../img/deve.png'
-import ulises from '../../img/ulises.png'
+import ulises from '../../img/ulisesros.png'
 import linkedin from '../../img/linkedin.png'
 import maleta from '../../img/maleta.png'
 import torta from '../../img/torta.png'
@@ -14,9 +14,9 @@ function Home() {
         <Box
             w={['100%','80%','50%']}
             >
-            <Image src={dev} alt='developer' w='100%' h='15rem' />
+            <Image src={dev} alt='developer' w='100%' h='15rem' objectFit='cover' />
             <Box>
-                <Image src={ulises} alt='ulises' w={['8.5rem','9.5rem','10rem']} h={['8.5rem','9.5rem','10rem']} borderRadius='100px' border='2px solid white' position='absolute' top={['275px','260px','260px']} marginLeft={['10px','30px','30px']}/>
+                <Image src={ulises} alt='ulises' objectFit='cover' w={['8.5rem','9.5rem','10rem']} h={['8.5rem','9.5rem','10rem']} borderRadius='100px' border='2px solid white' position='absolute' top={['275px','260px','260px']} marginLeft={['10px','30px','30px']}/>
                 <Box
                     w='100%'
                     display='flex'
@@ -29,14 +29,13 @@ function Home() {
                         target='_blank'
                         >
                         <Button
-                            backgroundColor='#CC0088'
+                            backgroundColor='#1DA1F2'
                             color='black'
                             borderRadius='80px'
                             _hover={{
-                                backgroundColor: 'white',
-                                color: '#CC0088',
-                                border: '1px solid black'
+                                transform: 'scale(1.05)'
                             }}
+                            boxShadow='4px 4px 10px rgba(0, 0, 0, 0.4)'
                             >
                             Linkedin <span><Image marginLeft='.3rem' w='1rem' h='1rem' src={linkedin} alt='linkedin icon'/></span>
                         </Button>
@@ -136,14 +135,13 @@ function Home() {
                             target='_blank'
                             >
                             <Button
-                                backgroundColor='#CC0088'
+                                backgroundColor='#1DA1F2'
                                 color='black'
                                 borderRadius='80px'
                                 _hover={{
-                                    backgroundColor: 'white',
-                                    color: '#CC0088',
-                                    border: '1px solid black'
+                                    transform: 'scale(1.05)'
                                 }}
+                                boxShadow='4px 4px 10px rgba(0, 0, 0, 0.4)'
                                 >
                                 🤘 Creemos algo juntos
                             </Button>

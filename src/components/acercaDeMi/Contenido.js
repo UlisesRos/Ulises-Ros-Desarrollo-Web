@@ -61,7 +61,7 @@ function Contenido() {
                         Este es mi sitio donde intento publicar sobre lo que hago y cómo hacer cosas con código.
                         En lo personal, me encanta estar con la computadora, crear codigo y viajar.
                     </Text>
-                    <Image src={paisaje} alt='foto mia' borderRadius='5px' margin='10px 0 0 58px' w='80%' h={['35vh','45vh','60vh']}/>
+                    <Image src={paisaje} alt='foto mia' objectFit='cover' borderRadius='5px' margin='10px 0 0 58px' w='80%' h={['35vh','45vh','60vh']}/>
             </Box>
             <Box
                 w='100%'
@@ -101,16 +101,14 @@ function Contenido() {
                         >
                     <Button
                         margin='40px 0 0 54px'
-                        backgroundColor='#CC0088'
-                        color='black'
                         w={['75%','80%','85%']}
+                        backgroundColor='#1DA1F2'
+                        color='black'
                         borderRadius='10px'
                         _hover={{
-                            backgroundColor: 'white',
-                            color: '#CC0088',
-                            border: '1px solid black'
+                            transform: 'scale(1.05)'
                         }}
-                        boxShadow='3px 3px 10px rgba(0, 0, 0, 0.5)'
+                        boxShadow='4px 4px 10px rgba(0, 0, 0, 0.4)'
                         >Hablame!
                     </Button>
                 </Link>

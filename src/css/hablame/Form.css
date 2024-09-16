@@ -42,15 +42,14 @@
     cursor: pointer;
     transition: all .5s ease-out;
     font-weight: bold;
-    border: solid 1px #CC0088;
-    color: #CC0088;
-    background-color: white;
+    border: 0px solid black;
+    color: black;
+    background-color: #1DA1F2;
     text-align: center;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
 .contact-form input[type="submit"]:hover {
-    opacity: .75;
-    color: white;
-    background-color: #CC0088;
+    transform: scale(1.05);
 }
 
 .contact-form-response {

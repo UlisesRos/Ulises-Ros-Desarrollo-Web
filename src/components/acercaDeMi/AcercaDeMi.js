@@ -34,11 +34,11 @@ function AcercaDeMi({theme}) {
                     >
                     <Button
                         backgroundColor={theme === 'light' ? '#f0f0f0' : '#1A202C'}
-                        color={theme == 'light' ? 'black' : 'white'}
+                        color={theme === 'light' ? 'black' : 'white'}
                         borderRadius='0'
                         w='100%'
                         _hover={{
-                            borderBottom:'3px solid #CC0088'
+                            borderBottom:'3px solid #1DA1F2'
                         }}
                         >
                         About me
@@ -50,11 +50,11 @@ function AcercaDeMi({theme}) {
                     >
                     <Button
                         backgroundColor={theme === 'light' ? '#f0f0f0' : '#1A202C'}
-                        color={theme == 'light' ? 'black' : 'white'}
+                        color={theme === 'light' ? 'black' : 'white'}
                         w='100%'
                         borderRadius='0'
                         _hover={{
-                            borderBottom:'3px solid #CC0088'
+                            borderBottom:'3px solid #1DA1F2'
                         }}
                         >                     
                         Courses 
@@ -66,11 +66,11 @@ function AcercaDeMi({theme}) {
                     >
                     <Button
                         backgroundColor={theme === 'light' ? '#f0f0f0' : '#1A202C'}
-                        color={theme == 'light' ? 'black' : 'white'}
+                        color={theme === 'light' ? 'black' : 'white'}
                         borderRadius='0'
                         w='100%'
                         _hover={{
-                            borderBottom:'3px solid #CC0088'
+                            borderBottom:'3px solid #1DA1F2'
                         }}
                         >
                         Projects
@@ -78,7 +78,7 @@ function AcercaDeMi({theme}) {
                 </Link>
             </Flex>
             <Flex
-                display={visible == '1' ? 'flex' : 'none'}
+                display={visible === '1' ? 'flex' : 'none'}
                 marginLeft={['20px','30px','30px']}
                 marginRight={['20px','30px','30px']}
                 marginTop='20px'
@@ -86,7 +86,7 @@ function AcercaDeMi({theme}) {
                 <Contenido />
             </Flex>
             <Flex
-                display={visible == '2' ? 'flex' : 'none'}
+                display={visible === '2' ? 'flex' : 'none'}
                 marginLeft={['20px','30px','30px']}
                 marginRight={['20px','30px','30px']}
                 marginTop='20px'
@@ -94,7 +94,7 @@ function AcercaDeMi({theme}) {
                 <Cursos />
             </Flex>
             <Flex
-                display={visible == '3' ? 'flex' : 'none'}
+                display={visible === '3' ? 'flex' : 'none'}
                 marginLeft={['20px','30px','30px']}
                 marginRight={['20px','30px','30px']}
                 marginTop='20px'

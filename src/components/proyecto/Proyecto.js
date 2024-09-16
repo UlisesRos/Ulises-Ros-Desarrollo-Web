@@ -1,7 +1,7 @@
 import React from 'react'
 import { Box, Text, Image, Link, Flex } from '@chakra-ui/react'
 import avatar from '../../img/avatar.svg'
-import fuerzaintegral from '../../img/fuerzaintegral.jfif'
+import fuerzaintegral from '../../img/fuerzaintegral.png'
 import store from '../../img/Store.png'
 import mercadolibre from '../../img/mercadolibre.jpg'
 import fron from '../../img/fron.jpg'
@@ -17,7 +17,23 @@ function Proyecto() {
             descripcion: 'Pagina Web de un gimnasio ubicado en la ciudad de Rosario.',
             link: 'https://fuerza-integral.vercel.app/',
             botonLink: 'fuerza-integral.vercel.app/',
-            gitHub: 'https://github.com/UlisesRos/pefManuelMartino.git'
+            gitHub: 'https://github.com/UlisesRos/pefManuelMartino.git',
+        },
+        {
+            img: fuerzaintegral,
+            titulo: 'Calendario Fuerza Integral',
+            descripcion: 'Calendario semanal personalizado para el gimnasio Fuerza Integra. Cuenta tanto con Backend como frontend. Totalmente funcional y en uso por el gimansio.',
+            link: 'https://calendario-fuerza-integral.vercel.app/',
+            botonLink: 'calendario-fuerza-integral.vercel.app/',
+            gitHub: 'https://github.com/UlisesRos/CalendarioFuerzaIntegral.git'
+        },
+        {
+            img: avatar,
+            titulo: 'Portafolio Personal',
+            descripcion: 'Portafolio personal realizado con React.js y ChakraUI. Este fue mi primer portafolio.',
+            link: 'https://ulises-ros.vercel.app/',
+            botonLink: 'ulises-ros.vercel.app/',
+            gitHub: 'https://github.com/UlisesRos/portafolioU'
         },
         {
             img: store,
@@ -104,7 +120,7 @@ function Proyecto() {
                         <Link
                             href={p.gitHub}
                             _hover={{
-                                color: '#CC0088'
+                                color: '#1DA1F2'
                             }}
                             target='_blank'
                             >
@@ -119,7 +135,7 @@ function Proyecto() {
                             target='_blank'
                             href={p.link}
                             >
-                            <Image cursor='pointer' src={p.img} alt={p.alt} borderRadius='5px' margin='10px 0 0 58px' w='80%' h={['35vh','45vh','60vh']}/>
+                            <Image cursor='pointer' objectFit='cover' src={p.img} alt={p.alt} borderRadius='5px' margin='10px 0 0 58px' w='80%' h={['35vh','45vh','60vh']}/>
                         </Link>
                     </Box>
                     ))}

@@ -41,5 +41,5 @@ body::-webkit-scrollbar-thumb {
 
 /* Cambia el color del deslizador al pasar el mouse */
 body::-webkit-scrollbar-thumb:hover {
-  background-color: #CC0088;
+  background-color: #1DA1F2;
 }
