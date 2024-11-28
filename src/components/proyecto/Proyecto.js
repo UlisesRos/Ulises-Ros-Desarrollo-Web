@@ -7,6 +7,7 @@ import mercadolibre from '../../img/mercadolibre.jpg'
 import fron from '../../img/fron.jpg'
 import portafolio from '../../img/portafolio.jpg'
 import ecommerce from '../../img/ecommerce.jpg'
+import motor from '../../img/motor.png'
 
 function Proyecto() {
 
@@ -26,6 +27,14 @@ function Proyecto() {
             link: 'https://calendario-fuerza-integral.vercel.app/',
             botonLink: 'calendario-fuerza-integral.vercel.app/',
             gitHub: 'https://github.com/UlisesRos/CalendarioFuerzaIntegral.git'
+        },
+        {
+            img: motor,
+            titulo: 'Frontend y Backend de Taller de Motos',
+            descripcion: 'Proyecto que incluye el back y el front de un taller de motos para administrar los clientes y sus turnos.',
+            link: 'https://tallertobias.vercel.app/',
+            botonLink: 'Taller Motos',
+            gitHub: 'https://github.com/UlisesRos/TallerTobias'
         },
         {
             img: avatar,
@@ -74,7 +83,7 @@ function Proyecto() {
             link: 'https://github.com/UlisesRos/ProyectoCoderHouse.git',
             botonLink: 'ProyectoCoderHouse.git',
             gitHub: 'https://github.com/UlisesRos/ProyectoCoderHouse.git'
-        }
+        },
     ]
 
     return (
