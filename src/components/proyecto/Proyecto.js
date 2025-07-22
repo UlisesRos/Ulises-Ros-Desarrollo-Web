@@ -8,6 +8,7 @@ import fron from '../../img/fron.jpg'
 import portafolio from '../../img/portafolio.jpg'
 import ecommerce from '../../img/ecommerce.jpg'
 import motor from '../../img/motor.png'
+import eunoia from '../../img/logoE.png'
 
 function Proyecto() {
 
@@ -27,6 +28,14 @@ function Proyecto() {
             link: 'https://calendario-fuerza-integral.vercel.app/',
             botonLink: 'calendario-fuerza-integral.vercel.app/',
             gitHub: 'https://github.com/UlisesRos/CalendarioFuerzaIntegral.git'
+        },
+        {
+            img: eunoia,
+            titulo: 'Calendario y Manejo de usuario en Estudio de pilates Eunoia',
+            descripcion: 'Esta es una aplicación web diseñada para que los usuarios puedan registrarse, iniciar sesión y seleccionar sus días y horarios de entrenamiento de manera organizada y limitada.',
+            link: 'https://eunoia-rosy.vercel.app/',
+            botonLink: 'Estudio de Pilates Eunoia',
+            gitHub: 'https://github.com/UlisesRos/Eunonia'
         },
         {
             img: motor,
